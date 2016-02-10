@@ -11,12 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160210040713) do
+ActiveRecord::Schema.define(version: 20160210045343) do
 
   create_table "common_codes", primary_key: "common_code_id", force: :cascade do |t|
     t.string   "main_id"
     t.string   "detail_id"
     t.string   "code_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "members", primary_key: "member_id", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "party_id"
+    t.integer  "region_id"
+    t.string   "rank"
+    t.string   "department"
+    t.string   "address"
+    t.string   "email"
+    t.string   "homepage"
+    t.string   "birth"
+    t.string   "carrer"
+    t.string   "military"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
