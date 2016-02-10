@@ -21,7 +21,7 @@ class MembersControllerTest < ActionDispatch::IntegrationTest
         member: {
           address: @member.address,
           birth: @member.birth,
-          carrer: @member.carrer,
+          career: @member.career,
           department: @member.department,
           email: @member.email,
           homepage: @member.homepage,
@@ -29,7 +29,8 @@ class MembersControllerTest < ActionDispatch::IntegrationTest
           name: @member.name,
           party_id: @member.party_id,
           rank: @member.rank,
-          region_id: @member.region_id
+          region_id: @member.region_id,
+          location: @member.location
         }
       }
     end
@@ -52,7 +53,7 @@ class MembersControllerTest < ActionDispatch::IntegrationTest
       member: {
         address: @member.address,
         birth: @member.birth,
-        carrer: @member.carrer,
+        career: @member.career,
         department: @member.department,
         email: @member.email,
         homepage: @member.homepage,
@@ -60,7 +61,8 @@ class MembersControllerTest < ActionDispatch::IntegrationTest
         name: @member.name,
         party_id: @member.party_id,
         rank: @member.rank,
-        region_id: @member.region_id
+        region_id: @member.region_id,
+        location: @member.location
       }
     }
     assert_redirected_to member_path(@member)

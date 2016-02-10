@@ -25,13 +25,14 @@ ActiveRecord::Schema.define(version: 20160210045343) do
     t.string   "name"
     t.integer  "party_id"
     t.integer  "region_id"
+    t.string   "location"
     t.string   "rank"
     t.string   "department"
     t.string   "address"
     t.string   "email"
     t.string   "homepage"
     t.string   "birth"
-    t.string   "carrer"
+    t.string   "career"
     t.string   "military"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

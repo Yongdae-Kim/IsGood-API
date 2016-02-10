@@ -44,9 +44,9 @@ class MembersController < ApplicationController
 
   def member_params
     params.require(:member).permit(
-      :name, :party_id, :region_id, :rank,
+      :name, :party_id, :region_id, :location, :rank,
       :department, :address, :email, :homepage,
-      :birth, :carrer, :military
+      :birth, :career, :military
     )
   end
 end

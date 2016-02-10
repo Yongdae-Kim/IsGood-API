@@ -4,24 +4,26 @@ one:
   name: MyString
   party_id: 1
   region_id: 1
+  location: MyString
   rank: MyString
   department: MyString
   address: MyString
   email: MyString
   homepage: MyString
   birth: MyString
-  carrer: MyString
+  career: MyString
   military: MyString
 
 two:
   name: MyString
   party_id: 1
   region_id: 1
+  location: MyString
   rank: MyString
   department: MyString
   address: MyString
   email: MyString
   homepage: MyString
   birth: MyString
-  carrer: MyString
+  career: MyString
   military: MyString

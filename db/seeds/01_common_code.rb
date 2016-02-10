@@ -104,6 +104,11 @@ CommonCode.create(
 CommonCode.create(
   main_id: 'REGION',
   detail_id: 17,
-  code_name: '비례대표'
+  code_name: '비례'
+)
+CommonCode.create(
+  main_id: 'REGION',
+  detail_id: 18,
+  code_name: '세종'
 )
 

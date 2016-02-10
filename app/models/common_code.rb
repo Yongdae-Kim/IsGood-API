@@ -14,4 +14,12 @@ class CommonCode < ApplicationRecord
   def self.region_list
     where(main_id: 'REGION')
   end
+
+  def self.find_region_id_by_code_name(code_name)
+    region_list.where(code_name: code_name).first.detail_id
+  end
+
+  def self.find_party_id_by_code_name(code_name)
+    party_list.where(code_name: code_name).first.detail_id
+  end
 end
