@@ -17,6 +17,7 @@
       <th>Birth</th>
       <th>Career</th>
       <th>Military</th>
+      <th>Crime</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -36,6 +37,7 @@
         <td><%= member.birth %></td>
         <td><%= member.career %></td>
         <td><%= member.military %></td>
+        <td><%= member.crime %></td>
         <td><%= link_to 'Show', member %></td>
         <td><%= link_to 'Edit', edit_member_path(member) %></td>
         <td><%= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' } %></td>

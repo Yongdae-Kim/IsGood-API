@@ -13,6 +13,7 @@ class CreateMembers < ActiveRecord::Migration[5.0]
       t.string :birth
       t.string :career
       t.string :military
+      t.string :crime
 
       t.timestamps
     end

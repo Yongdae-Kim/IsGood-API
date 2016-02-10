@@ -13,6 +13,7 @@ one:
   birth: MyString
   career: MyString
   military: MyString
+  crime: MyString
 
 two:
   name: MyString
@@ -27,3 +28,4 @@ two:
   birth: MyString
   career: MyString
   military: MyString
+  crime: MyString

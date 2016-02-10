@@ -30,7 +30,8 @@ class MembersControllerTest < ActionDispatch::IntegrationTest
           party_id: @member.party_id,
           rank: @member.rank,
           region_id: @member.region_id,
-          location: @member.location
+          location: @member.location,
+          crime: @member.crime
         }
       }
     end
@@ -62,7 +63,8 @@ class MembersControllerTest < ActionDispatch::IntegrationTest
         party_id: @member.party_id,
         rank: @member.rank,
         region_id: @member.region_id,
-        location: @member.location
+        location: @member.location,
+        crime: @member.crime
       }
     }
     assert_redirected_to member_path(@member)

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160210045343) do
+ActiveRecord::Schema.define(version: 20160210230611) do
 
   create_table "common_codes", primary_key: "common_code_id", force: :cascade do |t|
     t.string   "main_id"
@@ -19,6 +19,17 @@ ActiveRecord::Schema.define(version: 20160210045343) do
     t.string   "code_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "images", primary_key: "image_id", force: :cascade do |t|
+    t.string   "imageable_type"
+    t.integer  "imageable_id"
+    t.datetime "image_created_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.index ["imageable_type", "imageable_id"], name: "index_images_on_imageable_type_and_imageable_id"
   end
 
   create_table "members", primary_key: "member_id", force: :cascade do |t|
@@ -34,6 +45,7 @@ ActiveRecord::Schema.define(version: 20160210045343) do
     t.string   "birth"
     t.string   "career"
     t.string   "military"
+    t.string   "crime"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

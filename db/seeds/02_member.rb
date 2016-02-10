@@ -19,5 +19,6 @@ csv.each_with_index do |row, index|
   m.birth = row['birth']
   m.career = row['career']
   m.military = row['military']
+  m.crime = row['crime']
   m.save
 end
