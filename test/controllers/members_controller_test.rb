@@ -30,7 +30,7 @@ class MembersControllerTest < ActionDispatch::IntegrationTest
           party_id: @member.party_id,
           rank: @member.rank,
           region_id: @member.region_id,
-          location: @member.location,
+          constituency: @member.constituency,
           crime: @member.crime
         }
       }
@@ -63,7 +63,7 @@ class MembersControllerTest < ActionDispatch::IntegrationTest
         party_id: @member.party_id,
         rank: @member.rank,
         region_id: @member.region_id,
-        location: @member.location,
+        constituency: @member.constituency,
         crime: @member.crime
       }
     }

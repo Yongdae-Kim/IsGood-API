@@ -1,0 +1,47 @@
+<%= form_for(member_stat) do |f| %>
+  <% if member_stat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(member_stat.errors.count, "error") %> prohibited this member_stat from being saved:</h2>
+
+      <ul>
+      <% member_stat.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :item1_point %>
+    <%= f.number_field :item1_point %>
+  </div>
+
+  <div class="field">
+    <%= f.label :item2_point %>
+    <%= f.number_field :item2_point %>
+  </div>
+
+  <div class="field">
+    <%= f.label :item3_point %>
+    <%= f.number_field :item3_point %>
+  </div>
+
+  <div class="field">
+    <%= f.label :item4_point %>
+    <%= f.number_field :item4_point %>
+  </div>
+
+  <div class="field">
+    <%= f.label :item5_point %>
+    <%= f.number_field :item5_point %>
+  </div>
+
+  <div class="field">
+    <%= f.label :member_id %>
+    <%= f.text_field :member_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

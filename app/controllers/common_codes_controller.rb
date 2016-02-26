@@ -43,6 +43,8 @@ class CommonCodesController < ApplicationController
   end
 
   def common_code_params
-    params.require(:common_code).permit(:main_id, :detail_id, :code_name)
+    params.require(:common_code).permit(
+      :main_id, :detail_id, :code_name, :sort_set
+    )
   end
 end

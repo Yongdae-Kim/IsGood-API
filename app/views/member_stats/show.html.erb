@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Item1 point:</strong>
+  <%= @member_stat.item1_point %>
+</p>
+
+<p>
+  <strong>Item2 point:</strong>
+  <%= @member_stat.item2_point %>
+</p>
+
+<p>
+  <strong>Item3 point:</strong>
+  <%= @member_stat.item3_point %>
+</p>
+
+<p>
+  <strong>Item4 point:</strong>
+  <%= @member_stat.item4_point %>
+</p>
+
+<p>
+  <strong>Item5 point:</strong>
+  <%= @member_stat.item5_point %>
+</p>
+
+<p>
+  <strong>Member:</strong>
+  <%= @member_stat.member %>
+</p>
+
+<%= link_to 'Edit', edit_member_stat_path(@member_stat) %> |
+<%= link_to 'Back', member_stats_path %>

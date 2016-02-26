@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  si: MyString
+  gu: MyString
+  longitude: 1.5
+  latitude: 1.5
+
+two:
+  si: MyString
+  gu: MyString
+  longitude: 1.5
+  latitude: 1.5

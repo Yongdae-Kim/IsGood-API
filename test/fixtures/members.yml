@@ -4,7 +4,7 @@ one:
   name: MyString
   party_id: 1
   region_id: 1
-  location: MyString
+  constituency: MyString
   rank: MyString
   department: MyString
   address: MyString
@@ -19,7 +19,7 @@ two:
   name: MyString
   party_id: 1
   region_id: 1
-  location: MyString
+  constituency: MyString
   rank: MyString
   department: MyString
   address: MyString

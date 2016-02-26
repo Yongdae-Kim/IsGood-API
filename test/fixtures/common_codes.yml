@@ -4,8 +4,10 @@ one:
   main_id: MyString
   detail_id: MyString
   code_name: MyString
+  sort_set: 1
 
 two:
   main_id: MyString
   detail_id: MyString
   code_name: MyString
+  sort_set: 2

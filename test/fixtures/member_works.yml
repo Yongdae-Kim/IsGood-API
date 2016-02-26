@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  main_session_attendance: MyText
+  sub_session_attendance: MyText
+  bill_proposal: MyText
+  member: one
+
+two:
+  main_session_attendance: MyText
+  sub_session_attendance: MyText
+  bill_proposal: MyText
+  member: two

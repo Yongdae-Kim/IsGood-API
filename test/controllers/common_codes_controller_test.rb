@@ -21,7 +21,8 @@ class CommonCodesControllerTest < ActionDispatch::IntegrationTest
         common_code: {
           code_name: @common_code.code_name,
           detail_id: @common_code.detail_id,
-          main_id: @common_code.main_id
+          main_id: @common_code.main_id,
+          sort_set: @common_code.sort_set
         }
       }
     end
@@ -44,7 +45,8 @@ class CommonCodesControllerTest < ActionDispatch::IntegrationTest
       common_code: {
         code_name: @common_code.code_name,
         detail_id: @common_code.detail_id,
-        main_id: @common_code.main_id
+        main_id: @common_code.main_id,
+        sort_set: @common_code.sort_set
       }
     }
     assert_redirected_to common_code_path(@common_code)

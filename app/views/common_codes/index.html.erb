@@ -8,6 +8,7 @@
       <th>Main</th>
       <th>Detail</th>
       <th>Code name</th>
+      <th>Sort set</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,6 +19,7 @@
         <td><%= common_code.main_id %></td>
         <td><%= common_code.detail_id %></td>
         <td><%= common_code.code_name %></td>
+        <td><%= common_code.sort_set %></td>
         <td><%= link_to 'Show', common_code %></td>
         <td><%= link_to 'Edit', edit_common_code_path(common_code) %></td>
         <td><%= link_to 'Destroy', common_code, method: :delete, data: { confirm: 'Are you sure?' } %></td>

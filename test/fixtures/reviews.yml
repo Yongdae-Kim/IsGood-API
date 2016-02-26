@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyText
+  grade: 1.5
+  member: one
+  avatar: one
+
+two:
+  content: MyText
+  grade: 1.5
+  member: two
+  avatar: one

@@ -58,3 +58,5 @@ gem "paperclip", "~> 4.3"
 gem 'kaminari'
 # Awesome Print(Console)
 gem 'awesome_print'
+# Geocoder(Location)
+gem 'geocoder'
